@@ -22,7 +22,7 @@
         }
 
         .container{
-            background-color: rgb(176, 176, 105);
+            background-color: rgb(255, 255, 47);
             border: 2px solid black;
             padding:14px;
             margin: 14px;
@@ -60,9 +60,13 @@
             return `rgb(${val1}, ${val2}, ${val3})`
         }
 
-        setInterval(() => {
-            document.querySelector(".childContainer").style.background = getRandomColor();
-        }, 3000);
+    //    setInterval(() => {
+    //         document.querySelector(".childContainer").style.background = getRandomColor();
+    //     }, 3000);
+
+        setTimeout(() => {
+            document.querySelector(".container").style.background = getRandomColor();
+        }, 2500);
 
     </script>
 </body>
