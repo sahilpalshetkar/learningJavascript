@@ -56,3 +56,13 @@ const Bye = ()=>{
 }
 
 meet("pratik", Bye)
+
+/* <-----------callback 5 learning------------->*/
+const great = (name, callback)=>{
+    console.log(`Hi, ${name}`)
+    callback();
+}
+
+great("Shubham", ()=>{
+    console.log("Take care!")
+})
