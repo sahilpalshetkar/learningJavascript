@@ -44,3 +44,15 @@ const loadScript = (src, callback) => {
 };
 
 loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+
+/* <-----------callback 4 learning------------->*/
+const meet = (name, callback)=>{
+    console.log(`Hi, ${name}`)
+    callback();
+}
+
+const Bye = ()=>{
+    console.log("bye!")
+}
+
+meet("pratik", Bye)
