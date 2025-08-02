@@ -7,4 +7,17 @@ if (isNaN(a) || isNaN(b)) {
 }
 let sum = parseInt(a) + parseInt(b)
 
-console.log("The sum is", sum)
+function main(){
+    let x = 1;
+    try {
+        console.log("The sum is", sum * x)
+        return true
+    } catch (error) {
+        console.log("Error caught here")
+        return false
+    }
+    finally{
+        console.log("files are being closed and db connection is being closed")
+    }
+}
+let c = main()
